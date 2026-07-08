@@ -3,7 +3,7 @@
 This repository contains a collection of 25 practical electronics and programming exercises developed during my high school technical classes. All projects were written in C++ (Arduino IDE) and simulated using **SimulIDE**.
 
 ## Complete List of Exercises (25 Challenges)
-### 01. [Indicator Light](./Exercise-01-IndicatorLight)
+### 01. [Exercise-01-IndicatorLight](./Exercise-01-IndicatorLight)
 <details>
   <summary><b>Click to expand project details 🔍</b></summary>
 
