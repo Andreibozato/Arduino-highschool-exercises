@@ -39,3 +39,11 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Code Logic:** Applies the Stepper library with the setSpeed() (speed mapped by the potentiometer) and step() methods to move the shaft, combined with state variables (liga) and multiple if structures that prioritize buttons to alternate between operating modes and trigger programmed movements.
 </details>
 
+### 05. [Exercise-05-LEDEffects](./Exercise-05-LEDEffects)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Triggers four distinct lighting effects (all flashing together, alternating in pairs, sequence with repetitions, and continuous flashing) activated by independent buttons.
+  - **Simulated Hardware:** Uses 4 buttons with internal pull-up (pins 8–11) and 4 LEDs (pins 0–3), with associated resistors as shown in the image.
+  - **Code Logic:** Employs repetition structures (nested for, while) and if with !digitalRead to detect presses, controlling the patterns with delay().
+</details>
