@@ -128,3 +128,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses a 16×2 LCD display with I2C interface (SDA and SCL pins) and four buttons with internal pull-up (pins 2 to 5).
   - **Code Logic:** Employs if structures to detect presses, for loops with delay() for the counts, and the break instruction to interrupt the ascending count when button 3 is triggered, without using external interrupts.
 </details>
+
+### 15. [Exercise-15-LCDCounterMessages](./Exercise-15-LCDCounterMessages)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Displays fixed messages when buttons A and F are pressed, starts an ascending count from 0 to 100 (interruptible by button C) when B is pressed, and a countdown from 59 to 0 (interruptible by button E) when D is pressed, showing "PARADO" (STOPPED) on the LCD when interrupted.
+  - **Simulated Hardware:** Uses a 16×2 LCD display with I2C interface (address 0x27) and six buttons with internal pull-up on pins 2 to 7.
+  - **Code Logic:** Employs if structures to detect presses, for loops with delay() for the counts, and the break command to interrupt the loops when the stop button is detected, displaying the corresponding message on the second line.
+</details>
