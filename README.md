@@ -101,3 +101,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses an ultrasonic sensor (pins A3 and 8), a servo motor (pin 7), two LEDs (Red on pin 13, Green on pin 12), and a 16×2 LCD display with I2C interface (address 0x27).
   - **Code Logic:** Employs the Ultrasonic library to obtain the distance in centimeters, an if/else conditional structure to make decisions, and servo1.write(), digitalWrite(), and LCD.print() commands to update the actuators and the display every 200 ms.
 </details>
+
+### 12. [Exercise-12-CombinationalLogic](./Exercise-12-CombinationalLogic)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Controls two motors and two LEDs based on specific combinations of five buttons: one sequence activates the motors at different times; another turns LED1 on/off according to an input pattern; and LED2 is triggered by a logical condition involving AND, OR, and NOT operators.
+  - **Simulated Hardware:** Uses five buttons with pull-down resistors (pins 8 to 12), two motors (pins 0 and 1), and two LEDs with resistors (pins 2 and 3).
+  - **Code Logic:** Employs if structures with complex logical expressions (&&, ||, ! operators), delay() for timings, and direct digital write actions, without internal loops.
+</details>
