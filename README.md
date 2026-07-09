@@ -48,7 +48,7 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Code Logic:** Employs repetition structures (nested for, while) and if with !digitalRead to detect presses, controlling the patterns with delay().
 </details>
 
-### 06. [Exercise-06-SerialStepperMotor (Code Only)](./Exercise-06-SerialStepperMotorl)
+### 06. [Exercise-06-SerialStepperMotor (Code Only)](./Exercise-06-SerialStepperMotor)
 <details>
   <summary><b>Click to expand project details</b></summary>
   
