@@ -47,3 +47,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses 4 buttons with internal pull-up (pins 8–11) and 4 LEDs (pins 0–3), with associated resistors as shown.
   - **Code Logic:** Employs repetition structures (nested for, while) and if with !digitalRead to detect presses, controlling the patterns with delay().
 </details>
+
+### 06. [Exercise-06-SerialStepperMotor (Code Only)](./Exercise-06-SerialStepperMotorl)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Controls a stepper motor in three modes (clockwise, counterclockwise, and stopped) with speed adjustment (RPM) via buttons, as well as executing commands received by the serial monitor such as an exact turn in each direction and an automated process of two turns forward, pause, and two turns backward.
+  - **Simulated Hardware:** Uses a stepper motor connected to pins 9, 11, 10, and 12, six buttons with internal pull-up (pins 2 to 7) to define the direction and change the RPM, and serial communication to receive commands.
+  - **Code Logic:**Employs state variables (liga) and speed variables (rpm), conditionals to detect button presses with a waiting while, interpretation of characters via Serial, and continuous loops with step(1) or step(-1) depending on the mode, updating the rotation with setSpeed() each cycle.
+</details>
