@@ -110,3 +110,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses five buttons with pull-down resistors (pins 8 to 12), two motors (pins 0 and 1), and two LEDs with resistors (pins 2 and 3).
   - **Code Logic:** Employs if structures with complex logical expressions (&&, ||, ! operators), delay() for timings, and direct digital write actions, without internal loops.
 </details>
+
+### 13. [Exercise-13-FlashPatterns](./Exercise-13-FlashPatterns)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Triggers three flashing modes: LED1 flashes 10 times, LED2 flashes continuously as long as button 3 is released (stopping when pressed), and LEDs 3 and 4 flash alternately for 15 cycles.
+  - **Simulated Hardware:** Uses four buttons with internal pull-up (pins 8 to 11) and four LEDs with limiting resistors (pins 0 to 3).
+  - **Code Logic:** Employs for loops for fixed repetitions, a while loop with a button reading condition to maintain the flashing indefinitely, and delay() to control the time intervals.
+</details>
