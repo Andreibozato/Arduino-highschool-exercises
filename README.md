@@ -30,11 +30,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Code Logic:** Employs specific functions for each action (such as frente(), tras(), and Tesquerda()) and a chain of if conditionals that interpret characters received through the Serial port (e.g., 'F' for forward, 'B' for reverse, 'U'/'u' to turn the taillight on/off) and execute the commands instantly.
 </details>
 
-### 03. [Exercise-03-SerialControlCar](./Exercise-03-SerialControlCar)
+### 04. [Exercise-04-StepperMotorControl](./Exercise-04-StepperMotorControl)
 <details>
   <summary><b>Click to expand project details</b></summary>
   
-  - **Objective:** Controls the movements of a car with differential traction (forward, reverse, left/right turning, and sharp turns) and activates the lighting (headlight and taillight) through single-key commands sent by the serial monitor or Bluetooth.
-  - **Simulated Hardware:** Uses two DC motors connected to pins 4,5,6,7 (via H-bridge) for wheel control, as well as two LEDs representing the taillight (pin 12) and the headlight (pin 13).
-  - **Code Logic:** Employs specific functions for each action (such as frente(), tras(), and Tesquerda()) and a chain of if conditionals that interpret characters received through the Serial port (e.g., 'F' for forward, 'B' for reverse, 'U'/'u' to turn the taillight on/off) and execute the commands instantly.
+  - **Objective:** Controls a stepper motor with adjustable speed via a potentiometer, allowing continuous rotation in clockwise/counterclockwise directions, instant stop, execution of exact turns (1 turn forward/backward), and an automated sequence of 2 turns forward, pause, and 2 turns backward.
+  - **Simulated Hardware:** Uses a stepper motor (connected to pins 8,10,9,11) with a stepper driver, six buttons (pins 2 to 7) to trigger the modes, a potentiometer on pin A0 to define the rotation (RPM), and a 16x2 LCD display with I2C to display the status.
+  - **Code Logic:** Applies the Stepper library with the setSpeed() (speed mapped by the potentiometer) and step() methods to move the shaft, combined with state variables (liga) and multiple if structures that prioritize buttons to alternate between operating modes and trigger programmed movements.
 </details>
+
