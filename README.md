@@ -30,7 +30,7 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Code Logic:** Employs specific functions for each action (such as frente(), tras(), and Tesquerda()) and a chain of if conditionals that interpret characters received through the Serial port (e.g., 'F' for forward, 'B' for reverse, 'U'/'u' to turn the taillight on/off) and execute the commands instantly.
 </details>
 
-### 04. [Exercise-04-StepperMotorControl](./Exercise-04-StepperMotorControl)
+### 04. [Exercise-04-StepperMotorControl (Code Only)](./Exercise-04-StepperMotorControl)
 <details>
   <summary><b>Click to expand project details</b></summary>
   
