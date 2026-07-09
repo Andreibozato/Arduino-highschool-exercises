@@ -66,3 +66,11 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Code Logic:** Employs if/else structures to read the state of each button (HIGH level) and, in specific cases, defines the states of the LEDs with immediate actions or with a delay() to time the flashing of LED4.
 </details>
 
+### 08. [Exercise-08-MultiButtonLedControl](./Exercise-08-MultiButtonLedControl)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Controls four LEDs with six buttons, allowing to turn on an individual LED for 2 seconds, turn on all LEDs, turn off all, execute an alternating sequence between pairs of LEDs (1+3 and 2+4) with 2 seconds each, and perform a progressive shutdown (one by one with a 1-second interval).
+  - **Simulated Hardware:** Uses six push buttons (three with external pull-down on pins 2,3,4 and three with internal pull-up on pins 5,6,7) and four LEDs with limiting resistors on pins 10 to 13.
+  - **Code Logic:** Employs if structures to detect button activation (HIGH or LOW level, according to the configuration) and delay() to time the actions, without the need for loops or state variables to maintain the LEDs.
+</details>
