@@ -44,6 +44,6 @@ This repository contains a collection of 25 practical electronics and programmin
   <summary><b>Click to expand project details</b></summary>
   
   - **Objective:** Triggers four distinct lighting effects (all flashing together, alternating in pairs, sequence with repetitions, and continuous flashing) activated by independent buttons.
-  - **Simulated Hardware:** Uses 4 buttons with internal pull-up (pins 8–11) and 4 LEDs (pins 0–3), with associated resistors as shown in the image.
+  - **Simulated Hardware:** Uses 4 buttons with internal pull-up (pins 8–11) and 4 LEDs (pins 0–3), with associated resistors as shown.
   - **Code Logic:** Employs repetition structures (nested for, while) and if with !digitalRead to detect presses, controlling the patterns with delay().
 </details>
