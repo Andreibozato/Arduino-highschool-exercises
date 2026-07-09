@@ -57,7 +57,7 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Code Logic:** Employs state variables (liga) and speed variables (rpm), conditionals to detect button presses with a waiting while, interpretation of characters via Serial, and continuous loops with step(1) or step(-1) depending on the mode, updating the rotation with setSpeed() each cycle.
 </details>
 
-### 06. [Exercise-07-LedsButtonsControl](./Exercise-07-LedsButtonsControl)
+### 07. [Exercise-07-LedsButtonsControl](./Exercise-07-LedsButtonsControl)
 <details>
   <summary><b>Click to expand project details</b></summary>
   
