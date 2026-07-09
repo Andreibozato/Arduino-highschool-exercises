@@ -1,6 +1,6 @@
 # 🤖 High School Arduino & SimulIDE Exercises Collection
 
-This repository contains a collection of 25 practical electronics and programming exercises developed during my high school technical classes. All projects were written in C++ (Arduino IDE) and simulated using **SimulIDE**.
+This repository contains a collection of 25 practical electronics and programming exercises developed during my high school technical classes. All projects were written in C++ (Arduino IDE) and simulated using SimulIDE.
 
 ## Complete List of Exercises (25 Challenges)
 ### 01. [Exercise-01-IndicatorLight](./Exercise-01-IndicatorLight)
