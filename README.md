@@ -119,3 +119,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses four buttons with internal pull-up (pins 8 to 11) and four LEDs with limiting resistors (pins 0 to 3).
   - **Code Logic:** Employs for loops for fixed repetitions, a while loop with a button reading condition to maintain the flashing indefinitely, and delay() to control the time intervals.
 </details>
+
+### 14. [Exercise-14-LCDCounter](./Exercise-14-LCDCounter)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Displays fixed messages on the LCD when button 1 is pressed, starts an ascending count from 0 to 100 (with the possibility of interruption by button 3) when button 2 is pressed, and executes a descending count from 60 to 0 when button 4 is pressed.
+  - **Simulated Hardware:** Uses a 16×2 LCD display with I2C interface (SDA and SCL pins) and four buttons with internal pull-up (pins 2 to 5).
+  - **Code Logic:** Employs if structures to detect presses, for loops with delay() for the counts, and the break instruction to interrupt the ascending count when button 3 is triggered, without using external interrupts.
+</details>
