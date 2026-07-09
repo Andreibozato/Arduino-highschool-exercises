@@ -74,3 +74,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses six push buttons (three with external pull-down on pins 2,3,4 and three with internal pull-up on pins 5,6,7) and four LEDs with limiting resistors on pins 10 to 13.
   - **Code Logic:** Employs if structures to detect button activation (HIGH or LOW level, according to the configuration) and delay() to time the actions, without the need for loops or state variables to maintain the LEDs.
 </details>
+
+### 09. [Exercise-09-SequentialActivations](./Exercise-09-SequentialActivations)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Executes four different activation sequences of two motors and two LEDs when each button is pressed, varying the activation times and the on/off order (e.g., motor1+Led1 for 5s, then motor2+Led2 for 3s; or staggered connections with 1s intervals between each component).
+  - **Simulated Hardware:** Uses four buttons with internal pull-up (pins 8 to 11), two LEDs with resistors (pins 2 and 3), and two actuators (motors or loads) on pins 0 and 1.
+  - **Code Logic:** Employs conditionals if(!digitalRead()) to detect presses and a sequence of digitalWrite and delay() to create fixed and chained timings, without loops, ensuring that each sequence is executed only once per activation.
+</details>
