@@ -93,3 +93,11 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Code Logic:** Employs if structures to read each button, digitalWrite to activate the components, and delay() to create fixed and chained timings, without repetition loops, ensuring a single execution per press.
 </details>
 
+### 11. [Exercise-11-DistanceSensorServo](./Exercise-11-DistanceSensorServo)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Measures the distance with an ultrasonic sensor and, if the object is less than 30 cm away, turns on a green LED, turns off the red one, positions a servo motor at 90°, and displays "Siga" (Go) on the LCD; otherwise, it turns on the red LED, turns off the green one, positions the servo at 0°, and displays "Pare" (Stop).
+  - **Simulated Hardware:** Uses an ultrasonic sensor (pins A3 and 8), a servo motor (pin 7), two LEDs (Red on pin 13, Green on pin 12), and a 16×2 LCD display with I2C interface (address 0x27).
+  - **Code Logic:** Employs the Ultrasonic library to obtain the distance in centimeters, an if/else conditional structure to make decisions, and servo1.write(), digitalWrite(), and LCD.print() commands to update the actuators and the display every 200 ms.
+</details>
