@@ -83,3 +83,13 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses four buttons with internal pull-up (pins 8 to 11), two LEDs with resistors (pins 2 and 3), and two actuators (motors or loads) on pins 0 and 1.
   - **Code Logic:** Employs conditionals if(!digitalRead()) to detect presses and a sequence of digitalWrite and delay() to create fixed and chained timings, without loops, ensuring that each sequence is executed only once per activation.
 </details>
+
+### 10. [Exercise-10-MultipleActivations](./Exercise-10-MultipleActivations)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Executes four distinct modes: turning on all actuators for 3 seconds, flashing the LEDs in sequence (LED1 twice, LED2 three times), activating motors and LEDs in a staggered sequence (M1+L1, then M2+L2, then turning off M1+L1, then turning off M2+L2), and buttons to permanently turn everything on/off.
+  - **Simulated Hardware:** Uses five buttons (two with external pull-down, three with internal pull-up), two LEDs, and two motors (or loads) connected to digital pins (LEDs on pins 2 and 3, motors on pins A5 and A4 configured as outputs).
+  - **Code Logic:** Employs if structures to read each button, digitalWrite to activate the components, and delay() to create fixed and chained timings, without repetition loops, ensuring a single execution per press.
+</details>
+
