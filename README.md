@@ -56,3 +56,13 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses a stepper motor connected to pins 9, 11, 10, and 12, six buttons with internal pull-up (pins 2 to 7) to define the direction and change the RPM, and serial communication to receive commands.
   - **Code Logic:** Employs state variables (liga) and speed variables (rpm), conditionals to detect button presses with a waiting while, interpretation of characters via Serial, and continuous loops with step(1) or step(-1) depending on the mode, updating the rotation with setSpeed() each cycle.
 </details>
+
+### 06. [Exercise-07-LedsButtonsControl](./Exercise-07-LedsButtonsControl)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Controls four LEDs individually or in combination: button 1 turns on LED1; button 2 turns on LEDs 2 and 3; button 3 turns both off; and button 4 turns on LED4 for exactly 3 seconds and turns it off automatically.
+  - **Simulated Hardware:** Uses four buttons with pull-down resistors (10 kΩ) on pins 2 to 5 and four LEDs with limiting resistors on pins 10 to 13.
+  - **Code Logic:** Employs if/else structures to read the state of each button (HIGH level) and, in specific cases, defines the states of the LEDs with immediate actions or with a delay() to time the flashing of LED4.
+</details>
+
