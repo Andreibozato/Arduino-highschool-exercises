@@ -173,3 +173,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses five buttons (pins 8 to 12), two motors (pins 0 and 1), and two LEDs with resistors (pins 2 and 3).
   - **Code Logic:** Employs if structures with && (AND) and || (OR) logical operators to decide the outputs, without timings, ensuring instantaneous responses to button changes. 
 </details>
+
+### 20. [Exercise-20-IncompleteDisplayCounter](./Exercise-20-IncompleteDisplayCounter)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Controls a 7-segment display (tens and units) to display an ascending count from 0 to 9 when the "CRESCENTE" (UP) button is pressed, updating every second, while the "DECRESCENTE" (DOWN) and "PARAR" (STOP) buttons are not yet implemented in the code.
+  - **Simulated Hardware:** Uses two 7-segment displays (likely with a decoder or connected directly to the pins), three buttons with pull-down resistors (pins A5, A6, and A3), and the Arduino Uno.
+  - **Code Logic:** Employs direct port manipulation (DDRD and PORTD) to send the counter value to the displays, a for loop for the count, and delay(1000) for timing, with button reading using digitalRead in INPUT mode (without pull-up).
+</details>
