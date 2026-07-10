@@ -137,3 +137,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses a 16×2 LCD display with I2C interface (address 0x27) and six buttons with internal pull-up on pins 2 to 7.
   - **Code Logic:** Employs if structures to detect presses, for loops with delay() for the counts, and the break command to interrupt the loops when the stop button is detected, displaying the corresponding message on the second line.
 </details>
+
+### 16. [Exercise-16-TempLightSensor](./Exercise-16-TempLightSensor)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Reads temperature (LM35) and luminosity (LDR), displays the data on the LCD, classifies the time of day (Morning/Afternoon/Night) according to the LDR reading, and turns on specific LEDs when combinations occur (high light with low temperature → blue LED; low light with high temperature → red LED).
+  - **Simulated Hardware:** Uses an LM35 sensor on pin A2, an LDR on pin A1, two LEDs (blue on pin 13, red on pin 12), and a 16×2 LCD display with I2C interface (address 0x50).
+  - **Code Logic:** Employs analog conversion to obtain temperature and luminosity, if/else if/else conditional structures to classify the period, and decisions with logical operators (&&) to control the LEDs based on combined temperature and light ranges.
+</details>
