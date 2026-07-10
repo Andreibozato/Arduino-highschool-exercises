@@ -183,7 +183,7 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Code Logic:** Employs direct port manipulation (DDRD and PORTD) to send the counter value to the displays, a for loop for the count, and delay(1000) for timing, with button reading using digitalRead in INPUT mode (without pull-up).
 </details>
 
-### 21. [Exercise-20-IncompleteDisplayCounter](./Exercise-20-IncompleteDisplayCounter)
+### 21. [Exercise-21-CompleteDisplayCounter](./Exercise-21-CompleteDisplayCounter)
 <details>
   <summary><b>Click to expand project details</b></summary>
   
