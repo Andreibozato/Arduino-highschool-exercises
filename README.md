@@ -156,3 +156,11 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Code Logic:** Employs Serial reading with readString() and trim(), a chain of if structures to interpret characters, for loops for controlled repetitions, and sequences of digitalWrite with delay() to time the actions, with visual feedback on the LCD.
 </details>
 
+### 18. [Exercise-18-UltrasonicGate](./Exercise-18-UltrasonicGate)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Measures the distance with an ultrasonic sensor and, if an object is less than 30 cm away, opens the gate (servo at 90°), turns on the green LED, and displays "Portao Aberto" (Gate Open); otherwise, it closes the gate (servo at 0°), turns on the red LED, and displays "Portao Fechado" (Gate Closed).
+  - **Simulated Hardware:** Uses an ultrasonic sensor on pins 3 (echo) and 2 (trigger), a servo motor on pin 9, two LEDs (green on A0, red on A1), and a 16×2 LCD display with I2C (address 0x27).
+  - **Code Logic:** Employs the Ultrasonic library to obtain the distance in centimeters, an if/else conditional structure to decide the state of the gate, and servo1.write(), digitalWrite(), and LCD.print() commands to update the actuators and the screen every 200 ms.
+</details>
