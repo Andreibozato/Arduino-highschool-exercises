@@ -146,3 +146,13 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses an LM35 sensor on pin A2, an LDR on pin A1, two LEDs (blue on pin 13, red on pin 12), and a 16×2 LCD display with I2C interface (address 0x50).
   - **Code Logic:** Employs analog conversion to obtain temperature and luminosity, if/else if/else conditional structures to classify the period, and decisions with logical operators (&&) to control the LEDs based on combined temperature and light ranges.
 </details>
+
+### 17. [Exercise-17-SerialCommandsMotorLED](./Exercise-17-SerialCommandsMotorLED)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Controls two motors and two LEDs through commands sent via the Serial port: 'A' turns on motor1, 'B' turns it off, 'C' flashes LED1 10 times, and 'D' executes a programmed sequence with all actuators (turns on motor1+LED1 for 3s, then motor2+LED2 for 2s, then everything on for 4s and turns everything off).
+  - **Simulated Hardware:** Uses a 16×2 LCD display with I2C (address 0x27), two motors (pins 4 and 5), two LEDs with resistors (pins 6 and 7), and Serial communication to receive commands.
+  - **Code Logic:** Employs Serial reading with readString() and trim(), a chain of if structures to interpret characters, for loops for controlled repetitions, and sequences of digitalWrite with delay() to time the actions, with visual feedback on the LCD.
+</details>
+
