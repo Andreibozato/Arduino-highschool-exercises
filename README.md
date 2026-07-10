@@ -182,3 +182,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses two 7-segment displays (likely with a decoder or connected directly to the pins), three buttons with pull-down resistors (pins A5, A6, and A3), and the Arduino Uno.
   - **Code Logic:** Employs direct port manipulation (DDRD and PORTD) to send the counter value to the displays, a for loop for the count, and delay(1000) for timing, with button reading using digitalRead in INPUT mode (without pull-up).
 </details>
+
+### 21. [Exercise-20-IncompleteDisplayCounter](./Exercise-20-IncompleteDisplayCounter)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Controls two 7-segment displays (tens and units) to perform an ascending count (0→99) when pressing CRESCENTE, a descending count (99→0) when pressing DECRESCENTE, with an immediate pause when pressing PARAR and a reset to zero when pressing RESET, maintaining the last value after a pause.
+  - **Simulated Hardware:** Uses two 7-segment displays (likely with a BCD decoder or connected directly) connected to ports D (units) and B (tens), four buttons with pull-down resistors (CRESCENTE on A5, DECRESCENTE on A4, PARAR on A3, RESET on A2), and the Arduino Uno.
+  - **Code Logic:** Employs direct port manipulation (DDRD, DDRB, PORTD, PORTB) to update the displays, state variables (inic and inid) to store the pause point, for loops with a break upon detecting the PARAR button, and a separate if for the RESET that clears the displays and resets the limits.
+</details>
