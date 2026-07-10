@@ -164,3 +164,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses an ultrasonic sensor on pins 3 (echo) and 2 (trigger), a servo motor on pin 9, two LEDs (green on A0, red on A1), and a 16×2 LCD display with I2C (address 0x27).
   - **Code Logic:** Employs the Ultrasonic library to obtain the distance in centimeters, an if/else conditional structure to decide the state of the gate, and servo1.write(), digitalWrite(), and LCD.print() commands to update the actuators and the screen every 200 ms.
 </details>
+
+### 19. [Exercise-19-CombinationalLogic2](./Exercise-19-CombinationalLogic2)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Controls two motors and two LEDs based on logical combinations of five buttons: if CHA and CHB are active, it turns on LED1 and both motors; if CHC or CHD are active, it turns everything off; and LED2 turns on only when CHC and (CHD or CHE) are pressed simultaneously.
+  - **Simulated Hardware:** Uses five buttons (pins 8 to 12), two motors (pins 0 and 1), and two LEDs with resistors (pins 2 and 3).
+  - **Code Logic:** Employs if structures with && (AND) and || (OR) logical operators to decide the outputs, without timings, ensuring instantaneous responses to button changes. 
+</details>
