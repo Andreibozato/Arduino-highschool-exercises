@@ -209,3 +209,12 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses an LM35 sensor on pin A2, two LEDs on pins 12 and 13, and a 16×2 LCD display with I2C interface (address 0x27).
   - **Code Logic:** Employs analog conversion to obtain the temperature (formula (value*500)/1023), an if/else structure to compare it with the 22°C threshold, and delay() to control the display update rate.
 </details>
+
+### 24. [Exercise-24-ServoSerial](./Exercise-24-ServoSerial)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:**Controls the position of a servo motor through commands sent via the Serial port, allowing the user to set fixed angles (0°, 30°, 60°, 90°, 120°, 150°, 180°), increment/decrement step-by-step, and execute automatic sweeps (0→180 and 180→0).
+  - **Simulated Hardware:** Uses a servo motor connected to pin 9 (with pulses from 1000 to 2000 µs) and Serial communication to receive commands.
+  - **Code Logic:** Employs the Servo library, character reading via Serial.readString(), a chain of if structures to interpret commands, and for loops with delay() for continuous sweeps.
+</details>
