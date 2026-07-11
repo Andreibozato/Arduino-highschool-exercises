@@ -2,6 +2,23 @@
 
 This repository contains a collection of 24 practical electronics and programming exercises developed during my high school technical classes. All projects were written in C++ (Arduino IDE) and simulated using SimulIDE.
 
+## How to Test the Exercises (Step-by-Step)
+
+If you want to see the algorithms and circuits working in practice using **SimulIDE**, follow the procedure below to correctly compile and load the firmware:
+
+### 1. Compile the Code in the Arduino IDE
+1. Open the `.ino` file of the desired exercise in the **Arduino IDE**.
+2. In the top menu, go to **Sketch** (or *Rascunho*).
+3. Click on the **Export Compiled Binary** option (or press `Ctrl + Alt + S`).
+   * *This will generate the machine files required for the simulation in the same folder where the code is saved.*
+
+### 2. Load the Firmware into SimulIDE
+1. Open the **SimulIDE** software and load the corresponding circuit file (`.simu`).
+2. **Right-click** on top of the Arduino Uno board on the simulation screen.
+3. In the context menu that opens, click on **Load Firmware** (or *Carregar Firmware*).
+4. Navigate to the exercise folder and select the file with the extension containing **`.ino.standard.hex`** (or `.hex`).
+5. With the firmware properly loaded, click the **Power On/Start Simulation** button (red power/circuit icon at the top of SimulIDE) to see the components, LEDs, and logic respond in real time.
+   
 ## Complete List of Exercises (24 Challenges)
 ### 01. [Exercise-01-IndicatorLight](./Exercise-01-IndicatorLight)
 <details>
