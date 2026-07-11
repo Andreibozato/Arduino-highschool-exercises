@@ -199,6 +199,7 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Objective:** Simulates a beverage machine that heats water up to 100°C (displaying the temperature on the LCD), waits for the user to select an option via physical buttons (Coffee, Coffee with Milk, Cappuccino, Chocolate) or serial commands (C, L, H, P), triggers the door opening to place the cup, detects its presence with a sensor, closes the door, releases the valves in the correct order to prepare the drink, signals when ready, and opens the door for removal, repeating the cycle.
   - **Simulated Hardware:** Uses a 16×2 LCD display with I2C (0x27), a servo motor to control the door (pin 3), an LM35 temperature sensor (A2) to monitor the heating, a cup sensor (pin 4 with pull-up), four selection buttons (pins 8 to 11), and three solenoid valves (coffee, milk, chocolate on pins 5, 6, and 7) – additionally allowing remote control via the Serial port.
   - **Code Logic:** Employs specific functions for each type of beverage (cafe(), cafe_leite(), capuccino(), chocolate()), a main loop that waits for heating based on the analog reading of the LM35, uses while to wait for the placement/removal of the cup using the sensor, and delay() to time the opening of the valves and the messages on the LCD, in addition to interpreting serial commands with readString().
+</details>
 
 ### 23. [Exercise-23-TemperatureLCD (Code Only)](./Exercise-23-TemperatureLCD)
 <details>
