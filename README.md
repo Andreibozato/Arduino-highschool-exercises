@@ -214,7 +214,7 @@ This repository contains a collection of 25 practical electronics and programmin
 <details>
   <summary><b>Click to expand project details</b></summary>
   
-  - **Objective:**Controls the position of a servo motor through commands sent via the Serial port, allowing the user to set fixed angles (0°, 30°, 60°, 90°, 120°, 150°, 180°), increment/decrement step-by-step, and execute automatic sweeps (0→180 and 180→0).
+  - **Objective:** Controls the position of a servo motor through commands sent via the Serial port, allowing the user to set fixed angles (0°, 30°, 60°, 90°, 120°, 150°, 180°), increment/decrement step-by-step, and execute automatic sweeps (0→180 and 180→0).
   - **Simulated Hardware:** Uses a servo motor connected to pin 9 (with pulses from 1000 to 2000 µs) and Serial communication to receive commands.
   - **Code Logic:** Employs the Servo library, character reading via Serial.readString(), a chain of if structures to interpret commands, and for loops with delay() for continuous sweeps.
 </details>
