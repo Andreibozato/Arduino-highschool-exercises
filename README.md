@@ -191,3 +191,20 @@ This repository contains a collection of 25 practical electronics and programmin
   - **Simulated Hardware:** Uses two 7-segment displays (likely with a BCD decoder or connected directly) connected to ports D (units) and B (tens), four buttons with pull-down resistors (CRESCENTE on A5, DECRESCENTE on A4, PARAR on A3, RESET on A2), and the Arduino Uno.
   - **Code Logic:** Employs direct port manipulation (DDRD, DDRB, PORTD, PORTB) to update the displays, state variables (inic and inid) to store the pause point, for loops with a break upon detecting the PARAR button, and a separate if for the RESET that clears the displays and resets the limits.
 </details>
+
+### 22. [Exercise-22-BeverageMachine](./Exercise-22-BeverageMachine)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Simulates a beverage machine that heats water up to 100°C (displaying the temperature on the LCD), waits for the user to select an option via physical buttons (Coffee, Coffee with Milk, Cappuccino, Chocolate) or serial commands (C, L, H, P), triggers the door opening to place the cup, detects its presence with a sensor, closes the door, releases the valves in the correct order to prepare the drink, signals when ready, and opens the door for removal, repeating the cycle.
+  - **Simulated Hardware:** Uses a 16×2 LCD display with I2C (0x27), a servo motor to control the door (pin 3), an LM35 temperature sensor (A2) to monitor the heating, a cup sensor (pin 4 with pull-up), four selection buttons (pins 8 to 11), and three solenoid valves (coffee, milk, chocolate on pins 5, 6, and 7) – additionally allowing remote control via the Serial port.
+  - **Code Logic:** Employs specific functions for each type of beverage (cafe(), cafe_leite(), capuccino(), chocolate()), a main loop that waits for heating based on the analog reading of the LM35, uses while to wait for the placement/removal of the cup using the sensor, and delay() to time the opening of the valves and the messages on the LCD, in addition to interpreting serial commands with readString().
+
+### 23. [Exercise-06-SerialStepperMotor (Code Only)](./Exercise-06-SerialStepperMotor)
+<details>
+  <summary><b>Click to expand project details</b></summary>
+  
+  - **Objective:** Controls a stepper motor in three modes (clockwise, counterclockwise, and stopped) with speed adjustment (RPM) via buttons, as well as executing commands received by the serial monitor such as an exact turn in each direction and an automated process of two turns forward, pause, and two turns backward.
+  - **Simulated Hardware:** Uses a stepper motor connected to pins 9, 11, 10, and 12, six buttons with internal pull-up (pins 2 to 7) to define the direction and change the RPM, and serial communication to receive commands.
+  - **Code Logic:** Employs state variables (liga) and speed variables (rpm), conditionals to detect button presses with a waiting while, interpretation of characters via Serial, and continuous loops with step(1) or step(-1) depending on the mode, updating the rotation with setSpeed() each cycle.
+</details>
