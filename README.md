@@ -19,7 +19,7 @@ If you want to see the algorithms and circuits working in practice using **Simul
 4. Navigate to the exercise folder and select the file with the extension containing **`.ino.standard.hex`** (or `.hex`).
 5. With the firmware properly loaded, click the **Power On/Start Simulation** button (red power/circuit icon at the top of SimulIDE) to see the components, LEDs, and logic respond in real time.
    
-## Complete List of Exercises (24 Challenges)
+## List of Exercises (24 Challenges)
 ### 01. [Exercise-01-IndicatorLight](./Exercise-01-IndicatorLight)
 <details>
   <summary><b>Click to expand project details</b></summary>
