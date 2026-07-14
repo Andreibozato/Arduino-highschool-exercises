@@ -8,8 +8,8 @@ If you want to see the algorithms and circuits working in practice using **Simul
 
 ### 1. Compile the Code in the Arduino IDE
 1. Open the `.ino` file of the desired exercise in the **Arduino IDE**.
-2. In the top menu, go to **Sketch** (or *Rascunho*).
-3. Click on the **Export Compiled Binary** option (or press `Ctrl + Alt + S`).
+2. In the top menu, go to Sketch (or *Rascunho*).
+3. Click on the *Export Compiled Binary* option (or press `Ctrl + Alt + S`).
    * *This will generate the machine files required for the simulation in the same folder where the code is saved.*
 
 ### 2. Load the Firmware into SimulIDE
